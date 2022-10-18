@@ -5,6 +5,7 @@
  */
 package stringmetodusok;
 
+import java.util.Scanner;
 /**
  *
  * @author user3
@@ -55,7 +56,6 @@ public class StringMetodusok {
         System.out.println(szoveg.replace("tetszi", "akármilyen"));
         System.out.println(szoveg.replace("e", "b"));
         
-        System.out.println(szoveg.split(" "));
         
         Integer szam = 512;
         System.out.println(szam.toString());
@@ -64,6 +64,45 @@ public class StringMetodusok {
         
         System.out.println(szoveg.substring(3, 6));
                 
+        //Kérjük be egy diák teljes nevét a fullName változóba
+        
+        Scanner bill = new Scanner(System.in);  
+        System.out.println("Nevedet légy szíves:");
+        String fullName = bill.next() + bill.nextLine() ;
+        
+       // Szétszedjük a nevet firstName és lastName változókra
+        
+        System.out.println("A neved tehát: " + fullName );
+        String firstName = fullName.split(" ") [0];
+        String lastName = fullName.split(" ") [1];
+        System.out.println("A vezetékneved: " + firstName + ", a keresztneved: " + lastName);
+        
+        // Kérjünk be osztályazonosítót a classId változóba 
+        
+        String classId; 
+        System.out.println("Osztályodat légy szíves:");
+        classId = bill.nextLine();
+        
+        // az 'e'-ket 'E'-re átváltjuk
+        
+        classId= classId.replaceFirst("e", "E");
+        System.out.println(classId);
+        
+        //ha az évfolyam száma 2022-nél kisebb, akkor az oszt. azonosító minden betűje nagy
+        
+       int evfolyam =(Integer.parseInt(classId.substring(0, 4));
+       if (evfolyam < 2022) classId = classId.toUpperCase();
+        System.out.println(classId);
+       
+       
+        
+        
+        
+        
+        
+           
+        
+        
         
     }
     
