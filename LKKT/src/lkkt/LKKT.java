@@ -31,7 +31,7 @@ public class LKKT {
         int legkisebb = Math.min(elso,masodik);
         int lcm = legnagyobb;
         while (lcm % legkisebb != 0) {
-            lcm += legnagyobb;
+            lcm += legnagyobb; 
     }
         System.out.println("A legkisebb közös többszörös: " + lcm);
         
