@@ -39,8 +39,31 @@ public class StringMetodusok {
         System.out.println(szoveg.equals("ez egy tetszőleges szöveg"));
         System.out.println(szoveg.equalsIgnoreCase("ez egy tetszőleges szöveg"));
         
+        System.out.println(szoveg.endsWith(" "));
         
+        System.out.println(szoveg.startsWith(""));
          
+        System.out.println(szoveg.indexOf("t"));
+        
+        System.out.println(szoveg.indexOf("egy"));
+        
+        System.out.println(szoveg.lastIndexOf("t"));
+        
+        System.out.println(szoveg.isEmpty());
+        String szoveg2 = "";
+        System.out.println(szoveg2.isEmpty());
+        System.out.println(szoveg.replace("tetszi", "akármilyen"));
+        System.out.println(szoveg.replace("e", "b"));
+        
+        System.out.println(szoveg.split(" "));
+        
+        Integer szam = 512;
+        System.out.println(szam.toString());
+        
+        System.out.println(szoveg.substring(3));
+        
+        System.out.println(szoveg.substring(3, 6));
+                
         
     }
     
