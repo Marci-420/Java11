@@ -26,7 +26,7 @@ public class Metodusoksz {
         
     }
         
-    public static int veletlen(ont also, int felso) {
+    public static int veletlen(int also, int felso) {
         
    
   }
