@@ -24,15 +24,14 @@ public class Dogajav {
         //3
         System.out.println(szoveg2.equals(szoveg2, masikszoveg));
         //4
-        System.out.println(szoveg2.contain("lúd"));
+        System.out.println(szoveg2.contains("lúd"));
         //5
         System.out.println(szoveg2.indexOf("lúd"));
         //6
         System.out.println(szoveg2.replace("lúd", "veréb"));
-        
-        
-         int xddd = szoveg2.indexOf(" ");
-         System.out.println(szoveg2.substring(xddd));
+        //7
+        int xddd = szoveg2.indexOf(" ");
+        System.out.println(szoveg2.substring(xddd));
     }
     
 }
