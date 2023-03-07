@@ -46,7 +46,7 @@ public class Main {
  
         System.out.println("A tombben levo paros szamok osszege: "+osszeg);
         
-        //páűros számok
+        //páros számok
         int paross = 0;
         for( i = 0; i < lista1.length; i++ ) {
             if( lista1[i] % 2 == 0 ){

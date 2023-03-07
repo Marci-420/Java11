@@ -20,7 +20,7 @@ public class Metodusok__ {
         return Math.min(Math.min(x, y), z);
     }
     
-    // 2. egy bek�rt sz�m k�z�ps� bet�je/ középső betűi
+    // 2. egy bekért szó középső betűje/ középső betűi
     public static String middle(String str)
     {
         int poz;
