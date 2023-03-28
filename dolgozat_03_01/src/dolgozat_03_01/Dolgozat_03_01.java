@@ -61,35 +61,42 @@ public class Dolgozat_03_01 {
      }
      
      //van-e prímszám
-      public static boolean prim_e(int[][] matrix){
-         int ossz = 0;
-         int ossz2 = 0;
-         
-         for (int i = 0; i < matrix.length; i++){
-            for (int j = 0; j < matrix[0].length; j++){
-                ossz = 0;
-                for (int k = 1; k < 30; k++){
-                    if (matrix[i][j] % k == 0){
-                        ossz++;
-                    }
-                }
-                if (ossz == 2){
-                    ossz2++;
-                }
-               
-            }
-           
+      public static boolean prim_e(int number){
+          for (int i = 2; i < number; i++){
+              if (number % i == 0) {
+                  return false;
+          }
+      }
+        return true;
+            
         }
-         if (ossz2 == 0){
-             return false;
-         }
-         else{
-             return true;
-         }
-     }
+     
     // hol van az első prímszám?
+    public static boolean containsPrime(int[][] matrix){
+        for (int i = 0; i < matrix.length; i++){
+             for(int j = 0; j < matrix.length; j++){
+                 if(prim_e(matrix[i][j])){
+                     return true;
+                 }
+             }
+        }
+        return false;
+    }
     
-    
+    public static int[] firstPrime(int[][] matrix){
+        int[] result = new int[2];
+        for (int i = 0; i < matrix.length; i++){
+             for(int j = 0; j < matrix.length; j++){
+                   if(prim_e(matrix[i][j])){
+                       result[0] = i;
+                       result[1] = j;
+                       return result;
+                   }
+             }
+        }
+        return null;
+        
+    }
     public static void main(String[] args) {
         int[][] matrix = new int [3][3];
        
@@ -97,14 +104,17 @@ public class Dolgozat_03_01 {
         feltoltes(matrix);
         tagol();
         kulonbseg(matrix);
-        
-       if (prim_e(matrix) == true){
-            System.out.println("A mátrixban van prímszám");
+        tagol();
+        if (containsPrime(matrix)){
+            System.out.println("A mátrixban van prímszám.");
         }
         else{
-            System.out.println("A mátrixban nincs prímszám");
+            System.out.println("A mátrixban nincs prímszám.");
         }
-                
+        tagol();
+        
+        int[] place = firstPrime(matrix);
+            System.out.println("Az első prímszám a(z) " + (place[0] +1) + ". sor " + (place [1]+1)+ ". eleme  .");
         
     }
     

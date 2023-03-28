@@ -64,7 +64,7 @@ public class Matrix_02_07 {
         }
         return matrix;
     }
-      public static boolean azonos_e(int[][] matrix1, int[][] matrix2) {
+    public static boolean azonos_e(int[][] matrix1, int[][] matrix2) {
     if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
       return false;
     }
