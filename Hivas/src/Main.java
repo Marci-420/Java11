@@ -1,24 +1,21 @@
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Feladatok> feladat = new ArrayList<>();
+        ArrayList<Hivas> hivaslist = new ArrayList<>();
 
         try {
-            RandomAccessFile raf = new RandomAccessFile("felszam.txt", "r");
+            RandomAccessFile raf = new RandomAccessFile("HIVASOK.txt", "r");
+            String ido = raf.readLine();
+            String tel = raf.readLine();
 
-            String kerdes = raf.readLine();
-            String valasz = raf.readLine();
-
-
-            while ( kerdes!= null && valasz != null){
-                feladat.add(new Feladatok(kerdes, valasz));
-
-                kerdes = raf.readLine();
-                valasz = raf.readLine();
+            while (ido != null && tel != null){
+                hivaslist.add(new Hivas(ido.split(" "), tel));
+                ido = raf.readLine();
+                tel= raf.readLine();
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -26,8 +23,9 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-
-        System.out.println("A feladatok száma: " + feladat.size());
-
+        for (int i = 0; i < hivaslist.size(); i++){
+            System.out.println(hivaslist.get(i));
+        }
+        System.out.println("A hívások száma: " + hivaslist.size());
     }
 }
