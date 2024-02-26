@@ -4,41 +4,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER_LEFT" prefHeight="186.0" prefWidth="366.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toto.HelloController">
+<VBox alignment="CENTER_LEFT" prefHeight="262.0" prefWidth="422.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toto.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Label alignment="CENTER" text="Kérem a forduló eredményeit [1, 2 ,X]:" />
-    <TextField prefHeight="25.0" prefWidth="200.0">
-        <VBox.margin>
-            <Insets />
-        </VBox.margin>
-    </TextField>
-    <HBox prefHeight="20.0" prefWidth="326.0">
-        <CheckBox mnemonicParsing="false" />
-        <Label text="Nem megfelelő a karakterek száma">
-            <HBox.margin>
-                <Insets left="10.0" />
-            </HBox.margin>
-        </Label>
-        <Label text="(14)">
-            <HBox.margin>
-                <Insets left="5.0" />
-            </HBox.margin>
-        </Label>
-    </HBox>
-    <HBox prefHeight="20.0" prefWidth="326.0">
-        <CheckBox mnemonicParsing="false" />
-        <Label text="Helytelen karakter az eredményekben">
+    <Label text="Kérem a forduló eredményeit [1, 2, X]:" />
+    <TextField fx:id="resultField" maxWidth="300.0" onKeyTyped="#checkResult" prefWidth="300.0" />
+    <HBox prefHeight="0.0" prefWidth="300.0">
+        <CheckBox fx:id="incorrectCount" disable="true" mnemonicParsing="false" />
+        <Label text="Nem megfelelő a karakterek száma (">
             <padding>
-                <Insets left="10.0" />
+                <Insets left="5.0" />
             </padding>
         </Label>
-        <Label text="()">
-            <HBox.margin>
-                <Insets left="5.0" />
-            </HBox.margin>
-        </Label>
+        <Label fx:id="incorrectLengthLabel" text="0" />
+        <Label text=")" />
     </HBox>
-    <Button mnemonicParsing="false" text="Eredmények mentése" />
+    <HBox prefHeight="0.0" prefWidth="300.0">
+        <CheckBox fx:id="incorrectChar" disable="true" mnemonicParsing="false" />
+        <Label text="Helytelen karakter az eredményben (">
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </Label>
+        <Label fx:id="incorrectCharLabel" />
+        <Label text=")" />
+    </HBox>
+    <Button fx:id="saveButton" disable="true" mnemonicParsing="false" text="Eredmények mentése" />
 </VBox>
