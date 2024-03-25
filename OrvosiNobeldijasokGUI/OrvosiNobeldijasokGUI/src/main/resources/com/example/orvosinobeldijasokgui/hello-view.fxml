@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="274.0" prefWidth="256.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orvosinobeldijasokgui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="0.0" prefWidth="216.0">
+      <children>
+         <Label prefHeight="32.0" prefWidth="41.0" text="Év:" />
+         <TextField fx:id="age" layoutX="52.0" layoutY="6.0" prefHeight="17.0" prefWidth="64.0" />
+      </children>
+   </Pane>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Label layoutY="14.0" prefHeight="19.0" prefWidth="41.0" text="Név:" />
+         <TextField fx:id="name" layoutX="54.0" layoutY="14.0" prefHeight="17.0" prefWidth="131.0" />
+      </children>
+   </Pane>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Label layoutY="13.0" prefHeight="19.0" prefWidth="41.0" text="Sz/H:" />
+         <TextField fx:id="szh" layoutX="56.0" layoutY="12.0" prefHeight="19.0" prefWidth="131.0" />
+      </children>
+   </Pane>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Label layoutY="7.0" prefHeight="25.0" prefWidth="41.0" text="Ország:" />
+         <TextField fx:id="country" layoutX="59.0" layoutY="10.0" prefHeight="17.0" prefWidth="131.0" />
+      </children>
+   </Pane>
+   <Label fx:id="error" />
+   <Label fx:id="error2" />
+    <Button onAction="#onSave" text="Adatok mentése" />
+</VBox>

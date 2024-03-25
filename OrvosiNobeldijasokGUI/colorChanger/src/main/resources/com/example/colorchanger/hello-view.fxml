@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.colorchanger.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="400.0" prefWidth="500.0">
+      <children>
+         <Circle fx:id="circle" fill="#ece5e6" layoutX="42.0" layoutY="361.0" onMouseClicked="#changeCircleColor" radius="36.0" stroke="#ece5e6" strokeType="INSIDE" />
+         <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="43.0" layoutX="95.0" layoutY="339.0" onMouseClicked="#changeRectangleColor" stroke="DODGERBLUE" strokeType="INSIDE" width="72.0" />
+         <Ellipse fx:id="ellipse" fill="DODGERBLUE" layoutX="78.0" layoutY="260.0" onMouseClicked="#changeEllipseWidthAndColor" radiusX="70.0" radiusY="47.0" stroke="BLACK" strokeType="INSIDE" />
+         <Circle fx:id="circle2" fill="#80090e" layoutX="50.0" layoutY="164.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+         <ColorPicker fx:id="cottonPicker" layoutY="91.0" onAction="#changeCircle2Color" />
+         <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="#448031" height="55.0" layoutX="29.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="113.0" />
+         <Slider fx:id="sliderHorizontal" layoutX="29.0" layoutY="7.0" onMouseClicked="#changeRectangle2Width" prefHeight="14.0" prefWidth="113.0" />
+         <Slider fx:id="sliderVertical" layoutX="14.0" layoutY="20.0" onMouseClicked="#changeRectangle2Height" orientation="VERTICAL" prefHeight="55.0" prefWidth="14.0" />
+         <ImageView fx:id="img" fitHeight="176.0" fitWidth="148.0" layoutX="160.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="https://media.tenor.com/JiWAD3x3LWEAAAAM/lakatos-brendon-ok-and.gif" />
+            </image></ImageView>
+         <ImageView fitHeight="250.0" fitWidth="258.0" layoutX="242.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="https://i.makeagif.com/media/6-10-2021/qEYeN3.gif" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="248.0" fitWidth="176.0" layoutX="310.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="https://media.tenor.com/W1fgRykm8HcAAAAM/brendon-lakatos.gif" />
+            </image>
+         </ImageView>
+      </children>
+   </Pane>
+</VBox>

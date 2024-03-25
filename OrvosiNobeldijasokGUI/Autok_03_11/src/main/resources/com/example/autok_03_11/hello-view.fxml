@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="388.0" prefWidth="391.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autok_03_11.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <HBox prefHeight="28.0" prefWidth="351.0">
+      <children>
+         <Label  prefHeight="28.0" prefWidth="132.0" text="Márka:" />
+         <TextField fx:id="marka" prefHeight="24.0" prefWidth="150.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="24.0" prefWidth="351.0">
+      <children>
+         <Label prefHeight="26.0" prefWidth="130.0" text="Típus:" />
+         <TextField fx:id="tipus"  />
+      </children>
+   </HBox>
+   <HBox prefHeight="26.0" prefWidth="351.0">
+      <children>
+         <Label prefHeight="26.0" prefWidth="130.0" text="Label">
+            <graphic>
+               <Label  prefHeight="35.0" prefWidth="129.0" text="Hengerűrtartalom:" />
+            </graphic>
+         </Label>
+         <TextField fx:id="henger" prefHeight="26.0" prefWidth="152.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="26.0" prefWidth="351.0">
+      <children>
+         <Label  prefHeight="26.0" prefWidth="131.0" text="Szállítható személyek:" />
+         <TextField fx:id="szemelyek" prefHeight="26.0" prefWidth="151.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="26.0" prefWidth="351.0">
+      <children>
+         <Label  prefHeight="26.0" prefWidth="131.0" text="Rendszám:" />
+         <TextField fx:id="rendszam" prefHeight="26.0" prefWidth="156.0" />
+      </children>
+   </HBox>
+
+  <Button onAction="#onHelloButtonClick" text="Mentés" />
+</VBox>
