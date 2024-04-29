@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="pis" alignment="CENTER" prefHeight="321.0" prefWidth="342.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_css.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox  prefHeight="54.0" prefWidth="302.0" >
+      <children>
+         <VBox prefHeight="54.0" prefWidth="85.0">
+            <children>
+               <RadioButton mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" text="High" styleClass="shrek"/>
+               <RadioButton mnemonicParsing="false" prefHeight="34.0" prefWidth="104.0" text="Medium" styleClass="shrek"/>
+               <RadioButton mnemonicParsing="false" prefHeight="32.0" prefWidth="103.0" text="Low" styleClass="shrek"/>
+            </children>
+         </VBox>
+         <VBox prefHeight="54.0" prefWidth="110.0">
+            <children>
+               <TextField text="your name" styleClass="light"/>
+               <TextField text="Your password" styleClass="light"/>
+            </children>
+         </VBox>
+         <Pane prefHeight="54.0" prefWidth="103.0">
+            <children>
+               <ChoiceBox layoutX="4.0" layoutY="28.0" prefHeight="25.0" prefWidth="96.0" styleClass="shrek"/>
+            </children>
+         </Pane>
+      </children>
+   </HBox>
+   <Pane prefHeight="57.0" prefWidth="302.0">
+      <children>
+         <Button layoutX="11.0" layoutY="-3.0" mnemonicParsing="false" text="Accept" styleClass="shrek"/>
+         <Button layoutX="84.0" layoutY="-3.0" mnemonicParsing="false" text="Decline" styleClass="shrek"/>
+         <TextField layoutX="151.0" layoutY="-3.0" prefHeight="25.0" prefWidth="86.0" text="Not Available" styleClass="pis"/>
+      </children>
+   </Pane>
+   <Pane prefHeight="61.0" prefWidth="302.0">
+      <children>
+         <CheckBox layoutX="14.0" layoutY="7.0" mnemonicParsing="false" text="Normal" styleClass="shrek"/>
+         <CheckBox layoutX="83.0" layoutY="7.0" mnemonicParsing="false" text="Checked" styleClass="shrek"/>
+         <CheckBox layoutX="158.0" layoutY="7.0" mnemonicParsing="false" text="CheckBox" styleClass="shrek"/>
+      </children>
+   </Pane>
+   <Pane prefHeight="91.0" prefWidth="302.0">
+      <children>
+         <TextField layoutY="5.0" prefHeight="25.0" prefWidth="74.0" text="Progress:" styleClass="pis"/>
+         <Slider layoutX="74.0" layoutY="10.0" prefHeight="14.0" prefWidth="68.0" styleClass="pis"/>
+         <ProgressIndicator layoutX="167.0" layoutY="8.0" prefHeight="57.0" prefWidth="47.0" progress="0.0" styleClass="light"/>
+      </children>
+   </Pane>
+
+    <Label fx:id="welcomeText" styleClass="title-label" />
+</VBox>

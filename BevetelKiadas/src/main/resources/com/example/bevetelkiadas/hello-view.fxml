@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox prefHeight="264.0" prefWidth="395.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bevetelkiadas.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="TOP_LEFT" text="Pénzügyi nyilvántartás" />
+   <Pane prefHeight="183.0" prefWidth="234.0">
+      <children>
+         <TextField fx:id="Kosszeg" layoutY="27.0" prefHeight="25.0" prefWidth="118.0" text="Összeg" />
+         <TextField fx:id="Kdatum" layoutY="60.0" prefHeight="25.0" prefWidth="118.0" text="Dátum" />
+         <TextField fx:id="Kleiras" layoutX="-1.0" layoutY="94.0" prefHeight="25.0" prefWidth="118.0" text="Leírás (Opcionális)" />
+         <TextField fx:id="Bosszeg" layoutX="124.0" layoutY="27.0" prefHeight="25.0" prefWidth="118.0" text="Összeg" />
+         <TextField fx:id="Bdatum" layoutX="124.0" layoutY="60.0" prefHeight="25.0" prefWidth="118.0" text="Dátum" />
+         <TextField fx:id="Bleiras" layoutX="124.0" layoutY="94.0" prefHeight="25.0" prefWidth="118.0" text="Leírás (Opcionális)" />
+         <Label layoutY="6.0" prefHeight="17.0" prefWidth="109.0" text="Kiadás Rögzítése" />
+         <Label layoutX="122.0" layoutY="6.0" text="Bevétel Rögzítése" />
+          <Button fx:id="KiadButton" layoutY="128.0" onAction="#onKiadas" prefHeight="25.0" prefWidth="118.0" text="Kiadás hozzáadása" />
+         <Button fx:id="BevetButton" layoutX="124.0" layoutY="128.0" mnemonicParsing="false" onAction="#onBevetel" prefHeight="25.0" prefWidth="125.0" text="Bevétel Hozzáadása" />
+         <Rectangle fx:id="green" arcHeight="5.0" arcWidth="5.0" fill="#12800a" height="17.0" layoutX="255.0" layoutY="31.0" stroke="#12800a" strokeType="INSIDE" width="33.0" />
+         <Rectangle fx:id="red" arcHeight="5.0" arcWidth="5.0" fill="red" height="17.0" layoutX="308.0" layoutY="31.0" stroke="red" strokeType="INSIDE" width="33.0" />
+      </children></Pane>
+</VBox>

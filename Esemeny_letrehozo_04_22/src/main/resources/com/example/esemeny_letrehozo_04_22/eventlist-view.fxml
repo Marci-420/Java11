@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="319.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esemeny_letrehozo_04_22.EventListController">
+   <children>
+      <Pane layoutX="16.0" layoutY="11.0" prefHeight="296.0" prefWidth="490.0">
+         <children>
+            <Label layoutX="8.0" prefHeight="40.0" prefWidth="154.0" text="Eseményeim">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="8.0" layoutY="253.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="22.0" prefWidth="34.0" text="&lt;-">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="myTableView" layoutX="1.0" layoutY="47.0" prefHeight="201.0" prefWidth="490.0">
+               <columns>
+                  <TableColumn fx:id="title" prefWidth="201.0" text="Title" />
+                  <TableColumn fx:id="date" prefWidth="166.199951171875" text="Date" />
+                  <TableColumn fx:id="location" prefWidth="123.4000244140625" text="Location" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

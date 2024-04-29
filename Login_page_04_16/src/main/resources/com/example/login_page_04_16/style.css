@@ -1,0 +1,39 @@
+.leftside{
+-fx-background-image:  url("https://media.tenor.com/W1fgRykm8HcAAAAM/brendon-lakatos.gif");
+-fx-background-repeat: stretch;
+    -fx-background-size: 313 400;
+    -fx-background-position: center center;
+}
+
+.szov{
+-fx-font-family: "Quicksand";
+   -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: lightblue;
+   -fx-border-width: 2;
+   -fx-border-radius: 1;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-fill: black;
+
+}
+
+.button{
+-fx-background-color: lightblue;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.k{
+-fx-background-image:  url("https://cdn.discordapp.com/attachments/980241576104185957/1229342686176083998/120845126_2458594857775937_496213344306360615_n.jpg?ex=662f5598&is=661ce098&hm=9624a34985825d3fb861aea5a7673d0d21866c5251fca5d4e4086011ec25d965&");
+-fx-background-repeat: stretch;
+    -fx-background-size: 626 400;
+    -fx-background-position: center center;
+}
