@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="14.0" layoutY="25.0" prefHeight="45.0" prefWidth="458.0">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" prefHeight="17.0" prefWidth="42.0" text="NAME:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="91.0" layoutY="10.0" prefHeight="25.0" prefWidth="352.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="77.0" prefHeight="45.0" prefWidth="458.0">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="17.0" prefWidth="48.0" text="PHONE:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="91.0" layoutY="10.0" prefHeight="25.0" prefWidth="352.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="128.0" prefHeight="45.0" prefWidth="458.0">
+         <children>
+            <Label layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="48.0" text="EMAIL:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="91.0" layoutY="10.0" prefHeight="25.0" prefWidth="352.0" />
+         </children>
+      </Pane>
+      <Button layoutX="22.0" layoutY="220.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="220.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="SAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
